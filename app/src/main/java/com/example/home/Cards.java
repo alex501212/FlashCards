@@ -53,10 +53,16 @@ public class Cards
         List<String[]> preLoaded = new ArrayList<String[]>();
         preLoaded.clear();
 
-        preLoaded.add(preLoadedCards.get(0));
-        preLoaded.add(preLoadedCards.get(1));
-        preLoadedCards.remove(0);
-        preLoadedCards.remove(0);
+        for(int i = 0; i < 10; i++)
+        {
+            preLoaded.add(preLoadedCards.get(i));
+            preLoadedCards.remove(0);
+        }
+
+        //preLoaded.add(preLoadedCards.get(0));
+        //preLoaded.add(preLoadedCards.get(1));
+        //preLoadedCards.remove(0);
+        //preLoadedCards.remove(0);
 
         return preLoaded;
     }
@@ -948,6 +954,7 @@ public class Cards
         preLoadedCards.add(new String[]{"博物館を見がてらに、お土産を買うつもりです。", "While seeing the museum, I plan to also use that time to buy souvenirs.", "pre", "0.5", "1", "waiting", "はくぶつかんをけんがてらに、おみやげをかうつもりです。"});
         preLoadedCards.add(new String[]{"事情を2時間かけて説明をしたあげく、納得してもらえなかった。", "[After a great deal of] explaining the circumstances for 2 hours, [in the end], couldn't receive understanding.", "pre", "0.5", "1", "waiting", "じじょうを2じかんかけてせつめいをしたあげく、なっとくしてもらえなかった。"});
         preLoadedCards.add(new String[]{"先生と相談のあげく、退学することにした。", "[After much] consulting with teacher, [in the end], decided on dropping out of school.", "pre", "0.5", "1", "waiting", "せんせいとそうだんのあげく、たいがくすることにした。"});
+
     }
 
 }
